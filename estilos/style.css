@@ -29,16 +29,11 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
 
-}
-
-img#iphone {
-    position: absolute;
-    top: 0;
-    left: 0;
-
     height: 629px;
     width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat;
 }
+
 
 iframe#tela {
     position: relative;
@@ -53,7 +48,6 @@ section#redes-sociais {
     display: flex;
     flex-direction: column;
     align-items: end;
-
 }
 
 section#redes-sociais img {
