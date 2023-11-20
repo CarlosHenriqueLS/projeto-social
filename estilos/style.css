@@ -14,7 +14,8 @@ html, body {
 
 body {
     background: url(../imagens/fundo.png) no-repeat ;
-    background-attachment: cover ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -28,14 +29,15 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: 629px;
-    width: 311px;
 }
 
 img#iphone {
     position: absolute;
     top: 0;
     left: 0;
+
+    height: 629px;
+    width: 311px;
 }
 
 iframe#tela {
@@ -45,5 +47,33 @@ iframe#tela {
     width: 279px;
     height: 601px;
     border-radius: 38px;
+}
+
+section#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+section#redes-sociais img {
+    width: 50px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.306);
+    transition-duration: .5s;
+    opacity: 80%;
+}
+
+section#redes-sociais img:hover {
+    opacity: 100%;
+    border: 2px solid white;
+    transform: scale(1.1) translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+a {
+    text-decoration: none;
 }
 
